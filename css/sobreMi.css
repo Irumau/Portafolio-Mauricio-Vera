@@ -1,0 +1,45 @@
+:root{
+    --third-color: #90AFC5;
+    --second-color: #336B87;
+    --first-color: #2A3132;
+    --background-color: #f1f1f1f1;
+}
+
+
+
+.section-sobre-mi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: var(--first-color);
+}
+
+.section-sobre-mi h2{
+    color: var(--second-color);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.section-sobre-mi h2::first-letter{
+    color: var(--third-color);
+    font-size: 3rem;
+}
+
+.sobre-mi__container{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.sobre-mi__container p{
+    color: var(--second-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.sobre-mi__container p::first-letter{
+    color: var(--third-color);
+}

@@ -1,0 +1,86 @@
+/* Formaciones */
+:root{
+    --third-color: #90AFC5;
+    --second-color: #336B87;
+    --first-color: #2A3132;
+    --background-color: #f1f1f1f1;
+}
+
+.section-formaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--second-color);
+    background-color: var(--first-color);
+}
+
+
+
+.section-formaciones h2{
+    padding: 0 0 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section-formaciones h2::first-letter{
+    color: var(--third-color);
+}
+
+
+.formaciones__container{
+    display: flex;
+    justify-content: center;
+}
+
+.formaciones__figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem 2rem; 
+}
+
+.formaciones__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formaciones__title{
+    font-size: 1.3rem;
+    padding: 1.2rem 0;
+}
+
+.formaciones__title::first-letter{
+    color: var(--third-color);
+}
+
+.formaciones__tiempo{
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagenes de Formaciones */
+
+.formaciones__img{
+    background: url(../assets/formaciones/Alura.webp) no-repeat;
+    background-position:center center;
+    background-size: contain;
+    width: 200px;
+    height: 150px;
+    background-color: var(--second-color);
+    border-radius: 20px;
+}
+
+.formaciones__img2{
+    background: url(../assets/formaciones//Logo\ IPN.png) no-repeat;
+    background-position:center center;
+    background-size: contain;
+    width: 200px;
+    height: 150px;
+    background-color: var(--second-color);
+    border-radius: 20px;
+}
+
+/* Termina Formaciones */

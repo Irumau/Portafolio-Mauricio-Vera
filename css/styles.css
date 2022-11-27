@@ -1,0 +1,166 @@
+:root{
+    --third-color: #90AFC5;
+    --second-color: #336B87;
+    --first-color: #2A3132;
+    --background-color: #f1f1f1f1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family:'Kanit', sans-serif;
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar{
+    background-color: var(--second-color);     
+    border: 3px solid var(--first-color);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--third-color);
+    border-radius: 1rem;
+}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+
+
+
+.header-container{
+    display: flex;
+    position:fixed;
+    background-color: var(--first-color);
+    z-index: 10;
+    margin-bottom: 0rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.header_title a{
+    font-weight: 400;
+    color: var(--third-color);
+}
+
+
+.header_title::first-letter{
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+
+.link{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 0 0.8rem 0 0.8rem;
+    transition: 500ms all;
+    cursor: pointer;
+}
+
+
+
+.nav-bar.link:hover{
+    color: var(--third-color);
+    border-bottom: 1px solid var(--third-color);
+}
+
+#menuHamburger{
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    z-index: 20;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    color: var(--second-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* FIN HEADER */
+
+/* FOOTER */
+.footer__contactos{
+    background-color: var(--first-color);
+    margin-top: auto;
+    height: 40vh;
+}
+
+
+.contactos__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contactos__container h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--second-color);
+}
+
+
+
+.contacto__redes{
+    padding: 1.5rem;
+}
+
+.contacto__redes .link{
+    background-color: var(--background-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    margin: 0 1rem;
+}
+
+.contacto__redes .link:hover{
+    color: var(--third-color);
+}
+
+
+.contacto__derechos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto__derechos p{
+    text-align: justify;
+    color: var(--second-color);
+}
+
+.contacto__derechos p > a{
+    color: var(--third-color);
+}
+
+
+
