@@ -26,9 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <link rel="shortcut icon" href="assets/img/MauriPortafolio.png">
-
 </head>
-
 <body>
     <header>
         <div class="header-container">
@@ -55,11 +53,12 @@
                     Tengo formación en Desarrollo Front-end y actualmente estoy participando del proyecto Oracle One en
                     Alura Latam
                 </p>
-                <div class="link-container" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000">
-                    <a class="link" href=""><i class="fa-solid fa-download">CV</i></a>
+                <div class="link-container" >
+                    <a class="link" href="" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"><i class="fa-solid fa-download">CV</i></a>
                     <a class="link" href="http://www.linkedin.com/in/mauricio-vera-6b621b248/"
-                        target="_blank">LinkedIn</a>
+                        target="_blank" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">LinkedIn</a>
                 </div>
             </div>
             <div class="img-Im" id="imgIm"></div>
@@ -126,7 +125,7 @@
         <section id="section4" class="section-experiencias">
             <h2>Proyectos</h2>
             <div class="experiencia__container">
-                <figure class="experiencias__figure" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+                <figure class="experiencias__figure" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000">
                     <h3 class="experiencias__title">Encriptador de Texto</h3>
                     <img src="assets/proyectos/Screenshot_8.png" alt="" class="experiencia__img">
@@ -137,7 +136,7 @@
                                 Demo</a></button>
                     </div>
                 </figure>
-                <figure class="experiencias__figure" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                <figure class="experiencias__figure" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000">
                     <h3 class="experiencias__title">Anime Home</h3>
                     <img src="assets/proyectos/Screenshot_9.png" alt="" class="experiencia__img">
@@ -147,7 +146,7 @@
                         <button><a href="https://irumau.github.io" target="_blank">Ver Demo</a></button>
                     </div>
                 </figure>
-                <figure class="experiencias__figure" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+                <figure class="experiencias__figure" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000">
                     <h3 class="experiencias__title">Challenge Hub</h3>
                     <img src="assets/proyectos/challengeHubImg.jpg" alt="imagen challenge Encriptador"
@@ -187,7 +186,7 @@
     <script src="js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+            AOS.init()
     </script>
 </body>
 </html>

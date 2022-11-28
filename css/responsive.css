@@ -1,4 +1,4 @@
-@media screen and (max-width:425px) {
+@media screen and (max-width:600px) {
     .header-container{
         display: flex;
         flex-direction: column;
@@ -167,15 +167,17 @@
         margin-top: 0.5rem;
         border-radius: 5px;
     }
+
     .experiencias__button-container{
         display: flex;
         flex-direction: column;
     }
 
     .experiencias__button-container button{
-        margin: 0.5rem 0;
-        height: 45px;
-        width: 124px;
+        margin: 0.5rem 0.5rem;
+        padding: 0.5rem;
+        height:fit-content;
+        width: fit-content;
     }
     /* footer / contactos */
     .footer__contactos{
@@ -190,12 +192,28 @@
     .contacto__derechos{
         padding: 0 0 0.5rem 0;
     }
+
+    [data-aos] {
+        pointer-events: auto !important;
+    }
+    
+    html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+        opacity: 1 !important;
+    }
+    
+    html:not(.no-js) [data-aos=fade-up] {
+        transform: none !important;
+    }
 }
 
 
 
-@media screen and (min-width:425px) {
+@media screen and (min-width:768px) {
     /* Header */
+    .header-container{
+        padding: 0;
+        overflow-x: hidden;
+    }
     .nav-bar .link{
         padding: 0 0.5rem;
     }
