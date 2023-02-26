@@ -308,12 +308,6 @@
         font-size: 2rem;
         margin:  0 0 1rem 0;
     }
-    .inicio_title-main span{
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
     .inicio_description{
         font-size: 1.3rem;
         width: 80%;

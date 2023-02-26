@@ -14,6 +14,10 @@
     overflow-x:hidden;
 }
 
+.inicio div{
+    padding: 0 1rem;
+}
+
 
 .inicio_title-main{
     position: relative;
@@ -24,23 +28,7 @@
     display: inline-block;
 }
 
-.inicio_title-main span{
-    position: absolute;
-    right: 0;
-    width: 0;
-    background-color: #f1f1f1;
-    border-left: 1px solid var(--first-color);
-    animation: maquina 6s alternate steps(44);
-}
 
-@keyframes maquina {
-    from{
-        width:100%;    
-    }
-    to {
-        width: -40px;
-    }
-}
 
 
 .inicio_description-main::first-letter{
